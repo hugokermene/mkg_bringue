@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+h1 {
+    background-color: hsl(149, 100%, 50%);
+    font-family: "kanit";
+    color: aliceblue;
+}
+
+h2 {
+    background-color: rgb(90, 217, 116);
+    font-family: "kinit";
+}
+.boxes {
+    background-color: rgba(169, 169, 169, 0.363);
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.box {
+    background-color: rgb(84, 200, 115) ;
+    height: 100px;
+    width: 40%;
+}
+#lay {
+    background-color: green;
+}
+
+#lay2 {
+    background-color: black;
+}
+
+#lay3 {
+    background-color: green;
+}
