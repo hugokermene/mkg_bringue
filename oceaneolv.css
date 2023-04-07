@@ -1,0 +1,310 @@
+/* css Océane Olivier*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Kufam:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Kanit&family=Kufam:wght@500&display=swap');
+
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.recherche {
+    font-family: "abel";
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: lighter;
+}
+
+.searchbar {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 0px 70px;
+    border-radius: 30px;
+}
+
+.bandeau {
+    background-color: #36494E;
+    padding: 20px 45px;
+}
+
+.fontbandeau {
+    color: #F06449;
+    font-family: "kufam";
+    font-size: 20px ;
+}
+
+.loupe {
+    height: 30px;
+    align-self: center;
+}
+
+/* style de base pour la barre de navigation */
+.navbar {
+    background-color: #36494e;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+}
+
+/* style du logo */
+.navbar-logo img {
+    height: 60px;
+}
+
+/* style de la liste de menus */
+.navbar-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* style des éléments de menu */
+.navbar-menu-item {
+    margin: 0 20px;
+}
+
+/* style des liens de menu */
+.navbar-menu-item a {
+    text-decoration: none;
+    color: #f06449;
+}
+
+/* style du bouton coulissant */
+.toggle input[type="checkbox"] {
+    display: none;
+}
+
+/* style du bouton coulissant */
+.toggle .slider {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    background-color: #d9d9d9;
+    border-radius: 24px;
+    transition: .4s;
+}
+
+/* style du bouton coulissant lorsqu'il est activé */
+.toggle input[type="checkbox"]:checked+.slider {
+    background-color: #f06449;
+}
+
+/* style du curseur (rond) */
+/* .toggle .slider:before {
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 25px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+} */
+
+/* style du curseur (rond) lorsqu'il est activé */
+/* .toggle input[type="checkbox"]:checked+.slider:before {
+    transform: translateX(30px);
+} */
+
+
+/* style du curseur (image) */
+.toggle .slider:before {
+    position: absolute;
+    content: "";
+    height: 35px;
+    width: 50px;
+    left: 5px;
+    bottom: 5px;
+    background-image: url("img/delivery2.png");
+    background-size: cover;
+    transition: .4s;
+  }
+
+/* style du curseur (image) lorsqu'il est activé */
+.toggle input[type="checkbox"]:checked + .slider:before {
+    background-image: url("img/cart3.png");
+    transform: translateX(40px);
+  }
+
+  .icone {
+    height: 30px;
+  }
+
+
+h1 {
+    font-family: "kufam";
+    color: #36494E;
+    text-align: center;
+}
+
+h2 {
+    font-family: "kufam";
+    color: #36494E;
+}
+
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 25px;
+
+}
+
+
+.imgAccueil {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 15%;
+    border-radius: 10px;
+    margin: 15px;
+    border: white solid;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+  
+  .container {
+    padding: 2px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  h4 {
+    font-family: "kufam";
+    color: #36494E;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .photoconcept {
+    height: 260px;
+
+  }
+
+  .concept {
+    display: flex;
+    justify-content: space-around ;
+    margin: 50px;
+  }
+
+  h5 {
+    font-family: "kufam";
+    color: #F06449;
+    font-size: medium;
+  }
+
+.card2 {
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 10px;
+    margin: 15px;
+    border: rgb(211, 211, 211) solid 0.5px;
+  }
+
+button {
+    font-family: "abel" "bold";
+    font-size: medium;
+    color: white;
+    background-color: #F06449;
+    border: none;
+    border-radius: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+button:hover{
+    background-color: #f88871;
+    cursor: pointer;
+}
+
+
+.imageparledenous {
+    height: 80px;
+}
+
+.blocparledenous {
+    display: flex;
+    justify-content: center;
+}
+
+.texte {
+    color: white;
+    font-family: "abel";
+
+}
+
+.pdn {
+    margin: 25px;
+    background-color: rgb(54,73,78,0.8) ;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.grandpdn {
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 120px;
+}
+
+.grandmv {
+    margin: 50px;
+    margin-bottom: 100px;
+}
+
+.titre {
+    margin: 50px;
+}
+
+.top {
+    margin: 108px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    background-color: #36494E;
+    color: white;
+    text-align: center;
+}
+
+
+.logofooter {
+    height: 60px;
+
+}
+
+.textefooter{
+    display: flex;
+    font-family: "abel";
+    align-self: center;
+
+}
+
+body{
+    margin: 0;
+}
