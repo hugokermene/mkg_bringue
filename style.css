@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+/* general styles */
+body {
+  margin: 0;
+  font-family: Abel;
+}
+
+.top-center{
+    text-align: center;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* header styles */
+/* .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+
+}
+
+.header img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.header h1 {
+  color: #36494e;
+  font-size: 48px;
+  margin: 20px 0 0;
+  text-align: center;
+} */
+
+.intro{
+  width: 100%;
+  height: auto;
+}
+.selected{
+  background-color: #f06449;
+  margin-top : 10px;
+  margin-bottom : 10px;
+  border-radius: 50px;
+  width: 30%;
+  padding-top: 0px;
+}
+
+.entete-cat {
+  display: flex;
+  align-items: center;
+}
+
+.entete-cat img {
+  margin-right: 10px;
+}
+
+.droite {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.titre-div{
+  font-size:20px;
+  font-weight: bold;
+}
+
+.no-margin{
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+/* .header p {
+  color: #000;
+  font-size: 24px;
+  margin: 10px 0;
+  text-align: center;
+} */
+
+/* delivery and pickup styles */
+.rectangle {
+  font-size:18px;
+    background-color: #36494e;
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  border-radius: 30px;
+}
+
+.rectangle .card {
+  background-color: #36494e;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 40%;
+}
+
+.rectangle .card p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.rectangle .card.white {
+  background-color: #fff;
+  color: #36494e;
+}
+
+/* products styles */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.products .product {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  width: 48%;
+}
+
+.products .product .image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.products .product .details {
+  padding: 20px;
+  text-align: center;
+}
+
+.products .product .details h2 {
+  color: #36494e;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.products .product .details p {
+  color: #000;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* footer styles */
+footer {
+  background-color: #36494e;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+footer button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+
+.droite {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.droite > div:first-child {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.droite > div:last-child {
+  flex: 0 0 auto;
+}
+
+
+
+
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.recherche {
+  font-family: "Abel";
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: lighter;
+  align-self: center;
+}
+
+.searchbar {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0px 35px;
+  border-radius: 30px;
+}
+
+.bandeau {
+  padding: 20px 45px;
+}
+
+.fontbandeau {
+  color: #f06449;
+  font-family: "Kufam";
+  font-size: 20px;
+}
+
+.loupe {
+  height: 30px;
+  margin: 5px 0px;
+  align-self: center;
+}
+
+
+/* style de base pour la barre de navigation */
+.navbar {
+  background-color: #36494e;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+}
+
+/* style du logo */
+.navbar-logo img {
+  height: 60px;
+}
+
+/* style de la liste de menus */
+.navbar-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* style des éléments de menu */
+.navbar-menu-item {
+  margin: 0 20px;
+}
+
+/* style des liens de menu */
+.navbar-menu-item a {
+  text-decoration: none;
+  color: #f06449;
+}
+
+/* style du bouton coulissant */
+.toggle input[type="checkbox"] {
+  display: none;
+}
+
+/* style du bouton coulissant */
+.toggle .slider {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 100px;
+  height: 38px;
+  background-color: #f06449;
+  border-radius: 24px;
+  transition: .4s;
+}
+
+/* style du bouton coulissant lorsqu'il est activé */
+.toggle input[type="checkbox"]:checked+.slider {
+  background-color: #d9d9d9;
+}
+
+/* style du curseur (rond) */
+/* .toggle .slider:before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+} */
+
+/* style du curseur (rond) lorsqu'il est activé */
+/* .toggle input[type="checkbox"]:checked+.slider:before {
+  transform: translateX(30px);
+} */
+
+
+/* style du curseur (image) */
+.toggle .slider:after {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  right: 5px;
+  bottom: 5px;
+  background-image: url("img/customer_blue.png");
+  background-size: cover;
+  transition: .4s;
+}
+
+/* style du curseur (image) lorsqu'il est activé */
+.toggle input[type="checkbox"]:checked+.slider:after {
+  background-image: url("img/shopping_blue.png");
+  transform: translateX(-40px);
+}
+
+.icone {
+  height: 30px;
+}
+
+
+body {
+  margin: 0;
+}
+
+
+
+
