@@ -1,0 +1,431 @@
+/* CSS hugo Kermene */
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Kufam:wght@500&display=swap');
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.recherche {
+    font-family: "Abel";
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: lighter;
+    align-self: center;
+}
+
+.searchbar {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 0px 35px;
+    border-radius: 30px;
+}
+
+.bandeau {
+    padding: 20px 45px;
+}
+
+.fontbandeau {
+    color: #f06449;
+    font-family: "Kufam";
+    font-size: 20px;
+}
+
+.loupe {
+    height: 30px;
+    margin: 5px 0px;
+    align-self: center;
+}
+
+
+/* style de base pour la barre de navigation */
+.navbar {
+    background-color: #36494e;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+}
+
+/* style du logo */
+.navbar-logo img {
+    height: 60px;
+}
+
+/* style de la liste de menus */
+.navbar-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* style des éléments de menu */
+.navbar-menu-item {
+    margin: 0 20px;
+}
+
+/* style des liens de menu */
+.navbar-menu-item a {
+    text-decoration: none;
+    color: #f06449;
+}
+
+/* style du bouton coulissant */
+.toggle input[type="checkbox"] {
+    display: none;
+}
+
+/* style du bouton coulissant */
+.toggle .slider {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    width: 100px;
+    height: 38px;
+    background-color: #f06449;
+    border-radius: 24px;
+    transition: .4s;
+}
+
+/* style du bouton coulissant lorsqu'il est activé */
+.toggle input[type="checkbox"]:checked+.slider {
+    background-color: #d9d9d9;
+}
+
+/* style du curseur (rond) */
+/* .toggle .slider:before {
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 25px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+} */
+
+/* style du curseur (rond) lorsqu'il est activé */
+/* .toggle input[type="checkbox"]:checked+.slider:before {
+    transform: translateX(30px);
+} */
+
+
+/* style du curseur (image) */
+.toggle .slider:after {
+    position: absolute;
+    content: "";
+    height: 35px;
+    width: 50px;
+    right: 5px;
+    bottom: 5px;
+    background-image: url("img_hugo/cart2.png");
+    background-size: cover;
+    transition: .4s;
+}
+
+/* style du curseur (image) lorsqu'il est activé */
+.toggle input[type="checkbox"]:checked+.slider:after {
+    background-image: url("img_hugo/delivery2.png");
+    transform: translateX(-40px);
+}
+
+.icone {
+    height: 30px;
+}
+
+
+body {
+    margin: 0;
+}
+
+.carte {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+
+.categories {
+    margin-top: 20px;
+}
+
+h1 {
+    font-family: Kufam;
+    margin-top: 50px;
+    color: #36494e;
+    text-align: center;
+}
+
+h2 {
+    font-family: Kufam;
+    color: #f06449;
+    text-align: center;
+}
+
+.ligne {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+:root {
+    /* Colors */
+    --brand-color: #f06449;
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    /* Fonts */
+    --font-title: "Kufam";
+    --font-text: "Abel";
+}
+
+/* RESET */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h2,
+p {
+    margin: 0;
+}
+
+/* GLOBAL STYLES */
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+h2.card__title {
+    font-size: 2rem;
+    font-family: var(--font-title);
+    color: var(--white);
+    line-height: 1.1;
+}
+
+p.card__description {
+    font-family: var(--font-text);
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--white);
+}
+
+.flow>*+* {
+    margin-top: var(--flow-space, 1em);
+}
+
+/* CARD COMPONENT */
+
+.card {
+    display: grid;
+    width: 80vw;
+    max-width: 18rem;
+    height: 25rem;
+    overflow: hidden;
+    border-radius: 0.625rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+    margin: 15px;
+}
+
+.card>* {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.card__background {
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+}
+
+.card__content {
+    --flow-space: 0.9375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-end;
+    height: 55%;
+    padding: 12% 1.25rem 1.875rem;
+    background: linear-gradient(180deg,
+            hsla(0, 0%, 0%, 0) 0%,
+            hsla(0, 0%, 0%, 0.3) 10%,
+            hsl(0, 0%, 0%) 100%);
+}
+
+.card__content--container {
+    --flow-space: 1.25rem;
+}
+
+.card__title {
+    position: relative;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+.card__title::after {
+    content: "";
+    position: absolute;
+    height: 0.3125rem;
+    width: calc(100% + 1.25rem);
+    bottom: calc((1.25rem - 0.5rem) * -1);
+    left: -1.25rem;
+    background-color: var(--brand-color);
+}
+
+.card__button {
+    padding: 0.75em 1.6em;
+    width: fit-content;
+    width: -moz-fit-content;
+    font-variant: small-caps;
+    font-weight: bold;
+    border-radius: 0.45em;
+    border: none;
+    background-color: var(--brand-color);
+    font-family: var(--font-title);
+    font-size: 1.125rem;
+    color: var(--black);
+}
+
+.card__button:hover {
+    cursor: pointer;
+}
+
+.card__button:focus {
+    outline: 2px solid black;
+    outline-offset: -5px;
+}
+
+@media (any-hover: hover) and (any-pointer: fine) {
+    .card__content {
+        transform: translateY(62%);
+        transition: transform 500ms ease-out;
+        transition-delay: 500ms;
+    }
+
+    .card__title::after {
+        opacity: 0;
+        transform: scaleX(0);
+        transition: opacity 1000ms ease-in, transform 500ms ease-out;
+        transition-delay: 500ms;
+        transform-origin: right;
+    }
+
+    .card__background {
+        transition: transform 500ms ease-in;
+    }
+
+    .card__content--container> :not(.card__title),
+    .card__button {
+        opacity: 0;
+        transition: transform 500ms ease-out, opacity 500ms ease-out;
+    }
+
+    .card:hover,
+    .card:focus-within {
+        transform: scale(1.05);
+        transition: transform 500ms ease-in;
+    }
+
+    .card:hover .card__content,
+    .card:focus-within .card__content {
+        transform: translateY(0);
+        transition: transform 500ms ease-in;
+    }
+
+    .card:focus-within .card__content {
+        transition-duration: 0ms;
+    }
+
+    .card:hover .card__background,
+    .card:focus-within .card__background {
+        transform: scale(1.3);
+    }
+
+    .card:hover .card__content--container> :not(.card__title),
+    .card:hover .card__button,
+    .card:focus-within .card__content--container> :not(.card__title),
+    .card:focus-within .card__button {
+        opacity: 1;
+        transition: opacity 500ms ease-in;
+        transition-delay: 1000ms;
+    }
+
+    .card:hover .card__title::after,
+    .card:focus-within .card__title::after {
+        opacity: 1;
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: opacity 500ms ease-in, transform 500ms ease-in;
+        transition-delay: 500ms;
+    }
+}
+
+.travail {
+    margin: 50px;
+    padding: 0px 50px;
+}
+
+.travail2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.imageGauche {
+    width: 400px;
+    border-radius: 15px;
+    margin-right: 100px;
+    border: #d9d9d9 solid 0.4px;
+}
+
+.imageDroite {
+    width: 400px;
+    border-radius: 15px;
+    margin-left: 100px;
+    border: #d9d9d9 solid 0.4px;
+}
+
+h3 {
+    font-family: Kufam;
+    color: #36494e;
+}
+
+p {
+    font-family: Abel;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #36494E;
+    color: white;
+    text-align: center;
+}
+
+
+.logofooter {
+    height: 60px;
+
+}
+
+.textefooter{
+    font-family: "abel";
+    align-self: center;
+}
