@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2? family=Abel&display=swap');
+img{
+    width: 25%s;
+    height: 25%;
+}
+
+.imgborder{
+    border: 2px black aliceblue;
+    border-radius: 40%;
+    width: 50%;
+    height: 300px;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,2);
+}
+.Fleurs{
+    color: #f06449;
+
+}
+.Fleurs{
+    max-width: 800px;margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width:50%
+}
+.content {font-family: abel;
+font-weight: bolder;
+}
+.titre {
+    background-color: #36494e;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+img{
+    width: 600px;
+    display: block ;
+    margin-right: auto;
+    margin-left: auto;
+}
+.content{
+    text-align: center;
+    display: block ;
+    margin-right: auto;
+    margin-left: auto;
+}
+body{
+    background-color:#dddada;
+}
+    
